@@ -11,7 +11,8 @@ st.set_page_config(page_title="Soccer Challenge Hub", layout="centered")
 
 API_KEY = st.secrets["API_FOOTBALL_KEY"]
 HEADERS = {"x-apisports-key": API_KEY}
-BASE_URL = "https://api-sports.io"
+BASE_URL = "https://v3.football.api-sports.io"
+
 
 
 @st.cache_data(ttl=3600)
