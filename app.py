@@ -13,6 +13,7 @@ API_KEY = st.secrets["API_FOOTBALL_KEY"]
 HEADERS = {"x-apisports-key": API_KEY}
 BASE_URL = "https://api-sports.io"
 
+
 @st.cache_data(ttl=3600)
 def get_fixtures_for_date(date_str):
     url = f"{BASE_URL}/fixtures"
